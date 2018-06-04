@@ -3,12 +3,13 @@
 
 <head>
   <meta charset="UTF-8">
+  <link rel="stylesheet" href="./assets/css/reset.css">
   <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
 
-    <div class="header">
+    <header class="header">
         <div class="centeredheader">
             <div class="header1">
                 <h1>Tommy Le</h1>
@@ -20,29 +21,33 @@
                 <li><a href="./contact.html">Contact</a></li>
             </ul>
         </div>
-    </div>
+    </header>
 
     <div class="content">
         <div class="header2">
             <h2>Contact</h2>
         </div>
 
-        <div class ="form">
+        <div class ="clearfix">
             <br>
             <form>
-                Name<br>
-                <input type="text" name="name"><br>
-                Email<br>
-                <input type="text" name="email"><br>
-                Message<br>
-                <input type="text" name="message">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="wholename" placeholder="John Smith"><br>
+                <label for="email"></label>Email</label>
+                <input type="text" id="email" name"emailaddress" placeholder="example@gmail.com">
+                <label for="message">Message</label>
+                <input class="talltextbox" type="text" id="message" name="msgbox">
+
+                <input type="submit" value="Submit">
             </form>
         </div>
     </div>
 
-    <div class="footer">
-            <p>Copyright ©️</p>
-    </div>
+    <footer class="footer">
+        <p>
+            Copyright ©️
+        </p>
+    </footer>
 </body>
 
 </html>
