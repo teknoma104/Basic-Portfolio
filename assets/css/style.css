@@ -8,6 +8,7 @@ html, body {
 }
 
  .header {
+  display: flex;
   background-color: white;
   border-bottom: 2px solid #cccccc;
   margin-bottom: 40px;
@@ -66,6 +67,7 @@ li a {
  
 body {
   display: flex;
+  flex-grow: 1;
   flex-direction: column;
   background-image: url("../images/hypnotize.png");
   background-repeat: repeat;
