@@ -10,13 +10,13 @@ html, body {
 .header {
   background-color: white;
   border-bottom: 2px solid #cccccc;
+  margin-bottom: 40px;
   text-align: center;
   font-family: 'Georgia', Times, "Times New Roman", serif;
  }
 
 .centeredheader{
   max-width: 960px;
-  background: red;
   overflow: hidden;
   margin: 0 auto;
   position: relative;
@@ -34,7 +34,7 @@ li {
   float: left;
   text-align: center;
   align-items: center;
-  /** margin: 25px 0; **/
+   margin: 39px 0; 
 }
 
 li a {
@@ -42,8 +42,15 @@ li a {
   padding: 0px 16px;
   margin: 0 auto;
   text-decoration: none;
-  background-color: cyan;
-  line-height: 94px;
+  /* line-height: 94px; */
+}
+
+li+li {
+  border-left: 1px solid #cccccc;
+}
+
+a:link {
+  color: #777777;
 }
 
 .header1 {
@@ -64,7 +71,7 @@ li a {
  
 body {
   display: flex;
-  flex-grow: 1;
+  /* flex-grow: 1; */
   flex-direction: column;
   background-image: url("../images/hypnotize.png");
   background-repeat: repeat;
@@ -72,11 +79,13 @@ body {
 }
 
 .bigbody {
-  overflow: auto;
+  overflow-y: scroll;
+  margin-left: 12px;
 }
 
 p {
   line-height: 2;
+  text-indent: 30px;
 }
 
 .content {
@@ -84,6 +93,7 @@ p {
   margin: 0 auto;
   min-width: 960px;
   height: auto;
+  min-height: 100%;
   flex: 1 0 auto;
   margin: auto;
   background: white;
@@ -126,20 +136,11 @@ input[type=submit] {
 }
 
 .grid {
-  
   box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
   width: 600px;
 }
-
-/** old div way
-.portfoliorow {
-    float: left;
-    margin: 0 auto;
-    margin-bottom: 60px;
-}
-**/
 
 .portfoliopic {
   justify-content: space-around;
@@ -149,14 +150,6 @@ input[type=submit] {
   margin-right: 40px;
   position: relative;
 }
-
-/** old div way
-.portfoliopic {
-    margin-right: 40px;
-    display: inline;
-    position: relative;
-}
-**/
 
 .textoverpic {
     position: absolute;
