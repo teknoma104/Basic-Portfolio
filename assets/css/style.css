@@ -110,6 +110,11 @@ p {
   width: 266px;
 }
 
+#profileimg {
+  border-radius: 50%;
+  border: 5px solid #4aaaa5;
+}
+
 input[type=text], select {
   width: 100%;
   padding: 12px 20px;
